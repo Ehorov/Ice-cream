@@ -1,0 +1,80 @@
+.advantage {
+    background-color: $section-bg-color;
+    padding-bottom: 95px;
+    padding-top: 0px;
+    &__list {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        @media screen and (min-width: $tablet){
+            gap: 60px;
+            flex-wrap: nowrap;
+        }
+        @media screen and (min-width: $desktop){
+            gap: 30px;
+            flex-wrap: nowrap;
+        }
+    }
+    &__item--first {
+        max-width: 230px;
+        @media screen and (min-width: $tablet){
+            max-width: 180px;}
+        @media screen and (min-width: $desktop){
+            max-width: 330px;}
+    }
+    &__item--first::before {
+        content: url(../../src/images/advantage/icon-milk.png);
+        content: -webkit-image-set(url(../../src/images/advantage/icon-milk.png) 1x,url(../../src/images/advantage/icon-milk@2x.png) 2x);
+        display: block;
+        width: 33px;
+        height: 50px;
+    }
+    &__item--second {
+        max-width: 230px;
+        @media screen and (min-width: $tablet){
+            max-width: 180px;}
+        @media screen and (min-width: $desktop){
+            max-width: 330px;}
+    }
+    &__item--second::before {
+        content: url(../../src/images/advantage/icon-apples.png);
+        content: -webkit-image-set(url(../../src/images/advantage/icon-apples.png) 1x,url(../../src/images/advantage/icon-apples@2x.png) 2x);
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    &__item--third {
+        max-width: 230px;
+        @media screen and (min-width: $tablet){
+            max-width: 180px;}
+        @media screen and (min-width: $desktop){
+            max-width: 330px;}
+    }
+    &__item--third::before {
+        content: url(../../src/images/advantage/icon-icecream.png);
+        content: -webkit-image-set(url(../../src/images/advantage/icon-icecream.png) 1x,url(../../src/images/advantage/icon-icecream@2x.png) 2x);
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    
+    &__title {
+        margin-top: 25px;
+        font-family: $accent-font;
+        font-size: 36px;
+        color: $red-color;
+
+    }
+    &__text {
+        margin-top: 25px;
+        font-weight: bold;
+        font-size: 12px;
+        color: $black-color;
+        @media screen and (min-width: $tablet){
+            font-size: 14px;}
+        @media screen and (min-width: $desktop){
+            font-size: 16px;}
+    
+    }
+}
